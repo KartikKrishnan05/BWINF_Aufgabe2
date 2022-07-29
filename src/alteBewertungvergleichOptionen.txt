@@ -1,0 +1,169 @@
+if (Möglichkeiten.size() == 1) {
+        ausgewähltesHotel = Möglichkeiten.get(0);
+        }else if (Möglichkeiten.size() == 2) {
+        if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung) {
+        //System.out.println(Möglichkeiten.get(0));
+        ausgewähltesHotel = Möglichkeiten.get(0);
+        } else {
+        //System.out.println(Möglichkeiten.get(2));
+        ausgewähltesHotel = Möglichkeiten.get(1);
+        }
+        } else if (Möglichkeiten.size() == 3) {
+        if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(2).Bewertung) {
+        //System.out.println(Möglichkeiten.get(0));
+        ausgewähltesHotel = Möglichkeiten.get(0);
+        } else if (Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(2).Bewertung) {
+        //System.out.println(Möglichkeiten.get(1));
+        ausgewähltesHotel = Möglichkeiten.get(1);
+        } else {
+        //System.out.println(Möglichkeiten.get(2));
+        ausgewähltesHotel = Möglichkeiten.get(2);
+        }
+        } else if (Möglichkeiten.size() == 4) {
+        if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(3).Bewertung) {
+        //System.out.println(Möglichkeiten.get(0));
+        ausgewähltesHotel = Möglichkeiten.get(0);
+        } else if (Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(3).Bewertung) {
+        //System.out.println(Möglichkeiten.get(1));
+        ausgewähltesHotel = Möglichkeiten.get(1);
+        } else if (Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(3).Bewertung) {
+        //System.out.println(Möglichkeiten.get(1));
+        ausgewähltesHotel = Möglichkeiten.get(2);
+        } else {
+        //System.out.println(Möglichkeiten.get(2));
+        ausgewähltesHotel = Möglichkeiten.get(3);
+        }
+        } else if (Möglichkeiten.size() == 5) {
+        if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(3).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(4).Bewertung ) {
+        //System.out.println(Möglichkeiten.get(0));
+        ausgewähltesHotel = Möglichkeiten.get(0);
+        } else if (Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(3).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(4).Bewertung) {
+        //System.out.println(Möglichkeiten.get(1));
+        ausgewähltesHotel = Möglichkeiten.get(1);
+        } else if (Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(3).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(4).Bewertung) {
+        //System.out.println(Möglichkeiten.get(1));
+        ausgewähltesHotel = Möglichkeiten.get(2);
+        } else if (Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(4).Bewertung) {
+        //System.out.println(Möglichkeiten.get(1));
+        ausgewähltesHotel = Möglichkeiten.get(3);
+        } else {
+        //System.out.println(Möglichkeiten.get(2));
+        ausgewähltesHotel = Möglichkeiten.get(4);
+        }
+        }
+
+
+        /**
+         ArrayList<HOTEL> Hotelliste = new ArrayList<HOTEL>();
+        HOTEL Hotel1 = new HOTEL(12, 4.3);
+        Hotelliste.add(Hotel1);
+        HOTEL Hotel2 = new HOTEL(326, 4.8);
+        Hotelliste.add(Hotel2);
+        HOTEL Hotel3 = new HOTEL(347, 2.7);
+        Hotelliste.add(Hotel3);
+        HOTEL Hotel4 = new HOTEL(359, 2.6);
+        Hotelliste.add(Hotel4);
+        HOTEL Hotel5 = new HOTEL(553, 3.6);
+        Hotelliste.add(Hotel5);
+        HOTEL Hotel6 = new HOTEL(590, 0.8);
+        Hotelliste.add(Hotel6);
+        HOTEL Hotel7 = new HOTEL(687, 4.4);
+        Hotelliste.add(Hotel7);
+        HOTEL Hotel8 = new HOTEL(1007, 2.8);
+        Hotelliste.add(Hotel8);
+        HOTEL Hotel9 = new HOTEL(1008, 2.6);
+        Hotelliste.add(Hotel9);
+        HOTEL Hotel10 = new HOTEL(1321, 2.1);
+        Hotelliste.add(Hotel10);
+        HOTEL Hotel11 = new HOTEL(1360, 2.8);
+        Hotelliste.add(Hotel11);
+        HOTEL Hotel12 = new HOTEL(1411, 3.3);
+        Hotelliste.add(Hotel12);
+        **/
+
+/**
+ for (int c = 0; c <= Möglichkeiten.size(); c++) {
+ //System.out.println(c);
+ for (int d = 0; d <= anzahlHotels; d++) {
+ //System.out.println(d);
+ if (Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(d).Bewertung) {
+ }
+ }
+ }
+ **/
+
+             /**
+             for (int c = 0; c <= Möglichkeiten.size(); c++) {
+                 //System.out.println(c);
+                 for (int d = 0; d <= Möglichkeiten.size(); d++) {
+                     //System.out.println(d);
+                     if (Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(d).Bewertung) {
+                     }
+                 }
+             }
+
+
+             for (int c = 0; c <= Möglichkeiten.size(); c++) {
+                 if (Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(3).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(4).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(5).Bewertung
+                         && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(6).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(7).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(8).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(9).Bewertung && Möglichkeiten.get(c).Bewertung >= Möglichkeiten.get(10).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(0));
+                     ausgewähltesHotel = Möglichkeiten.get(c);
+                 }
+             }
+ **/
+
+         /**
+             if (Möglichkeiten.size() == 1) {
+                 ausgewähltesHotel = Möglichkeiten.get(0);
+             }else if (Möglichkeiten.size() == 2) {
+                 if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(0));
+                     ausgewähltesHotel = Möglichkeiten.get(0);
+                 } else {
+                     //System.out.println(Möglichkeiten.get(2));
+                     ausgewähltesHotel = Möglichkeiten.get(1);
+                 }
+             } else if (Möglichkeiten.size() == 3) {
+                 if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(2).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(0));
+                     ausgewähltesHotel = Möglichkeiten.get(0);
+                 } else if (Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(2).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(1));
+                     ausgewähltesHotel = Möglichkeiten.get(1);
+                 } else {
+                     //System.out.println(Möglichkeiten.get(2));
+                     ausgewähltesHotel = Möglichkeiten.get(2);
+                 }
+             } else if (Möglichkeiten.size() == 4) {
+                 if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(3).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(0));
+                     ausgewähltesHotel = Möglichkeiten.get(0);
+                 } else if (Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(3).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(1));
+                     ausgewähltesHotel = Möglichkeiten.get(1);
+                 } else if (Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(3).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(1));
+                     ausgewähltesHotel = Möglichkeiten.get(2);
+                 } else {
+                     //System.out.println(Möglichkeiten.get(2));
+                     ausgewähltesHotel = Möglichkeiten.get(3);
+                 }
+             } else if (Möglichkeiten.size() == 5) {
+                 if (Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(3).Bewertung && Möglichkeiten.get(0).Bewertung >= Möglichkeiten.get(4).Bewertung ) {
+                     //System.out.println(Möglichkeiten.get(0));
+                     ausgewähltesHotel = Möglichkeiten.get(0);
+                 } else if (Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(3).Bewertung && Möglichkeiten.get(1).Bewertung >= Möglichkeiten.get(4).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(1));
+                     ausgewähltesHotel = Möglichkeiten.get(1);
+                 } else if (Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(3).Bewertung && Möglichkeiten.get(2).Bewertung >= Möglichkeiten.get(4).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(1));
+                     ausgewähltesHotel = Möglichkeiten.get(2);
+                 } else if (Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(0).Bewertung && Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(1).Bewertung && Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(2).Bewertung && Möglichkeiten.get(3).Bewertung >= Möglichkeiten.get(4).Bewertung) {
+                     //System.out.println(Möglichkeiten.get(1));
+                     ausgewähltesHotel = Möglichkeiten.get(3);
+                 } else {
+                     //System.out.println(Möglichkeiten.get(2));
+                     ausgewähltesHotel = Möglichkeiten.get(4);
+                 }
+             }
+         **/
